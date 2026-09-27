@@ -1,4 +1,4 @@
-# School Management System PHP & MYSQL
+# National School Management System (PHP & MySQL)
 
 version: 1.0.0
 

@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/* ---- Brand color palette ---- */
+:root {
+	--brand-navy: #1B3358;
+	--brand-blue: #2F6690;
+	--brand-blue-light: #9CC1D9;
+	--brand-amber: #F5A623;
+	--brand-amber-dark: #C9821A;
+	--brand-bg-tint: #F4F7FB;
+}
+
+.body-home, .body-login {
+	background: url(../img/bg.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+.black-fill {
+	background: linear-gradient(180deg, rgba(27,51,88,0.78), rgba(47,102,144,0.72));
+	min-height: 100vh;
+}
+#homeNav {
+	background: rgba(244,247,251, 0.85) !important;
+}
+
+/* ---- Brand overrides for Bootstrap defaults ---- */
+.navbar-dark.bg-dark {
+	background-color: var(--brand-navy) !important;
+}
+.btn-primary {
+	background-color: var(--brand-blue) !important;
+	border-color: var(--brand-blue) !important;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+	background-color: var(--brand-navy) !important;
+	border-color: var(--brand-navy) !important;
+}
+a {
+	color: var(--brand-blue);
+}
+a:hover {
+	color: var(--brand-navy);
+}
+.nav-link.active {
+	color: var(--brand-amber) !important;
+	font-weight: 600;
+}
+.card-header, thead {
+	background-color: var(--brand-blue-light) !important;
+}
+.welcome-text {
+	min-height: 80vh;
+}
+.welcome-text img {
+	width: 100px;
+}
+.welcome-text h4 {
+	color: #ffffff;
+	font-size: 51px;
+	font-family: 'Lobster', cursive;
+	text-shadow: 0 2px 10px rgba(0,0,0,0.25);
+}
+.welcome-text p {
+	color: var(--brand-navy);
+	background: rgba(244,247,251, 0.85);
+	padding: 5px 12px;
+	border-radius: 4px;
+}
+#about {
+	min-height: 100vh;
+}
+#about .card-1{
+	max-width: 600px;
+	width: 90%;
+	background: rgba(244,247,251, 0.9);
+	padding: 20px;
+	border-radius: 5px;
+	border-top: 4px solid var(--brand-amber);
+}
+#about .card-1 h5{
+	font-family: 'Lobster', cursive;
+	font-size: 28px;
+}
+
+#contact {
+	min-height: 100vh;
+}
+#contact form{
+	max-width: 600px;
+	width: 90%;
+	background: rgba(244,247,251, 0.9);
+	padding: 20px;
+	border-radius: 5px;
+	border-top: 4px solid var(--brand-amber);
+}
+#contact form h3 {
+	text-align: center;
+	font-family: 'Lobster', cursive;
+	color: var(--brand-navy);
+}
+textarea {
+	resize: none;
+}
+
+.login {
+	max-width: 500px;
+	width: 90%;
+	background: rgba(244,247,251, 0.92);
+	padding: 10px 10px 20px;
+	border-radius: 10px;
+	border-top: 4px solid var(--brand-amber);
+}
+.login h3{
+	text-align: center;
+	font-size: 50px;
+	color: var(--brand-navy);
+	font-family: 'Lobster', cursive;
+}
+.w-450 {
+	width: 450px;
+}
+.n-table {
+	max-width: 800px;
+}
+.form-w {
+	max-width: 600px;
+	width: 100%;
+}
